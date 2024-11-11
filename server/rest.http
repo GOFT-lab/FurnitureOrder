@@ -1,0 +1,57 @@
+POST http://localhost:3001/register
+Content-Type: application/json
+
+{
+    "user": {
+        "email": "goft228@gmail.com",
+        "password": "SW2001sy",
+        "confirm_password": "SW2001sy",
+        "first_name": "Will",
+        "last_name": "Freak",
+        "role": "MEMBER"
+  }
+}
+
+###
+
+POST http://localhost:3001/login
+Content-Type: application/json
+
+{
+    "email": "goft228@gmail.com",
+    "password": "SW2001sy"
+}
+
+###
+
+POST http://localhost:3001/email_verification
+Content-Type: application/json
+
+{
+    "email": "goft228@gmail.com",
+    "token": "d9a520"
+}
+
+### 
+GET http://localhost:3001/profile
+Content-Type: application/json
+
+{
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwiZW1haWwiOiJnb2Z0MjI4QGdtYWlsLmNvbSIsImZpcnN0X25hbWUiOiJXaWxsIiwibGFzdF9uYW1lIjoiRnJlYWsiLCJyb2xlIjoiTUVNQkVSIiwiY3JlYXRlZF9hdCI6IjIwMjQtMTEtMDVUMTY6Mzg6NDguMDA3WiIsInVwZGF0ZWRfYXQiOiIyMDI0LTExLTA1VDE2OjM4OjQ4LjAwN1oiLCJlbWFpbF92ZXJpZmljYXRpb25fc3RhdHVzIjoiVkVSSUZJRUQiLCJpYXQiOjE3MzA4MzAzMTUsImV4cCI6MTczMDkxNjcxNX0.dLH15rsjitKHNqRv6j8IVlFOjSzm7XfhdWVVcwpszw8" 
+}
+
+###
+
+POST  http://localhost:3001/send_email_verification_token
+Content-Type: application/json
+
+{
+    "email": "goft228@gmail.com",
+    "name" : "Will Freak"
+}
+
+###
+
+ GET http://localhost:3001/furniture
+ Content-Type: application/json
+ 

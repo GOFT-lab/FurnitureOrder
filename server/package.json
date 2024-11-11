@@ -1,0 +1,37 @@
+{
+  "name": "furnitureorder",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "SET DEBUG=furnitureorder:* & SET NODE_ENV=prod & node index.js",
+    "dev": "SET DEBUG=furnitureorder:* && SET NODE_ENV=dev && nodemon index.js",
+    "lint-fix": "eslint . --fix",
+    "test": "SET NODE_ENV=dev & node test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Furniture Order Project",
+  "dependencies": {
+    "@getbrevo/brevo": "^1.0.1",
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "debug": "^4.3.7",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "jsonwebtoken": "^9.0.2",
+    "knex": "^3.1.0",
+    "pg": "^8.13.1",
+    "sib-api-v3-sdk": "^8.5.0",
+    "string-template": "^1.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/eslint-parser": "^7.25.9",
+    "eslint": "^9.13.0",
+    "eslint-plugin-vue": "^9.30.0",
+    "globals": "^15.11.0",
+    "nodemon": "^3.1.7"
+  }
+}
