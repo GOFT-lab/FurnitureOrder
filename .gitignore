@@ -1,3 +1,4 @@
-node_modules/
-.env
-rest.http
+client/furniture_order_ui/node_modules/
+server/node_modules/
+server/.env
+server/rest.http
