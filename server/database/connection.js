@@ -1,7 +1,7 @@
 const knex = require('knex');
-const config = require('./knexfile'); // Отримайте поточну конфігурацію
+const config = require('./knexfile');
 
-const environment = process.env.NODE_ENV || 'dev'; // Встановіть environment за замовчуванням
+const environment = process.env.NODE_ENV || 'dev';
 
 if (!config) {
   throw new Error(

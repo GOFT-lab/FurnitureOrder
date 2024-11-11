@@ -65,7 +65,6 @@
 
           const token = response.data.token;
           this.authStore.login(token);
-          // console.log(token);
           Swal.fire({
             icon: 'success',
             title: 'Success!',

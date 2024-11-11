@@ -36,6 +36,4 @@ const environments = {
 };
 
 const currentConfig = environments[process.env.NODE_ENV] || environments.dev;
-
-// Експортуємо конфігурацію для використання в міграціях та сервері
 module.exports = currentConfig;
